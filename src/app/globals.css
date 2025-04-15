@@ -1,26 +1,55 @@
 @import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --green-E4EFE7: #E4EFE7;
+  --green-99BC85: #99BC85;
+  --begie-FAF1E6: #FAF1E6;
+  --begie-FDFAF6: #FDFAF6;
+
+  
+
+}
+@font-face {
+  font-family: 'CustomFont'; /* نام فونت */
+  src: url('../../public/fonts/baloo-da-2-2-cufonfonts/BalooDa2-Regular.ttf') format('truetype'); /* مسیر فایل فونت */
+  font-weight: normal; /* وزن فونت */
+  font-style: normal; /* حالت فونت */
+}
+@font-face {
+  font-family: 'lalehzar'; /* نام فونت */
+  src: url('../../public/fonts/Lalezar-Regular/Lalezar-Regular\ a4fran3.ttf') format('truetype'); /* مسیر فایل فونت */
+  font-weight: normal; /* وزن فونت */
+  font-style: normal; /* حالت فونت */
+}
+@font-face {
+  font-family: 'tahoma'; /* نام فونت */
+  src: url('../../public/fonts/Tahoma/Tahoma.ttf') format('truetype'); /* مسیر فایل فونت */
+  font-weight: normal; /* وزن فونت */
+  font-style: normal; /* حالت فونت */
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+@font-face {
+  font-family: 'IRANSans'; /* نام فونت */
+  src: url('../../public/fonts/IRANSans-FaNum/IRANSans-FaNum.ttf') format('truetype'); /* مسیر فایل فونت */
+  font-weight: normal; /* وزن فونت */
+  font-style: normal; /* حالت فونت */
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
+body{
+  background-color: var(--green-E4EFE7);
+  display: flex;
+  flex-direction: column;
+ margin: 0;
+ height: 100vh;
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+ font-family: 'IRANSans', sans-serif;
+}
+.main_content{
+  flex-grow: 1;
+}
+.button{
+  background: var(--green-99BC85);
+  color: white;
+   border-radius: 5px;
 }

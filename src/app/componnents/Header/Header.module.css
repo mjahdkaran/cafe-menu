@@ -1,0 +1,10 @@
+.header{
+    background-color: var(--green-E4EFE7);
+    color: var(--green-99BC85);
+    font-family: 'Montserrat', sans-serif;
+  
+  }
+  .button{
+    background: var(--green-99BC85);
+    color: white;
+  }
