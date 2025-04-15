@@ -1,13 +1,13 @@
 "use client";
 
 import React, { useState } from "react";
-import "./home.css";
+import "./menu.css";
 import Image from "next/image";
 
 import { fetchMenu } from "@/app/api/sevises/axios";
 import { IMenu, IMenuItem } from "@/app/types/types";
 import { useQuery } from "@tanstack/react-query";
-import Menu from "../componnents/Menu/Menu";
+import SideBar from "../componnents/SideBar/SideBar";
 import ItemCard from "../componnents/ItemCard/ItemCard";
 import SearchInput from "../componnents/SearchInput/SearchInput";
 
@@ -21,7 +21,7 @@ export default function page() {
   console.log('data',data)
   return (
     <div>
-      <Menu onSelect={setActiveTab} />
+      <SideBar onSelect={setActiveTab} />
       <SearchInput/>
 
       <div className="grid md:grid-cols-4 grid-cols-1 gap-4 md:p-4 0 px-6 py-4    ">

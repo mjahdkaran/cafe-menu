@@ -11,3 +11,13 @@ export interface IMenu {
   salad: MenuItem[];
   main_food: MenuItem[];
 }
+// types.ts
+
+
+export interface CartItem {
+  id: number;
+  name: string;
+  price: number;
+  img: string;
+  quantity: number;
+}

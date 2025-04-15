@@ -1,6 +1,6 @@
 import React, { ReactNode } from "react";
 import Header from "../componnents/Header/Header";
-import "./home.css";
+import "./menu.css";
 import SearchInput from "../componnents/SearchInput/SearchInput";
 
 export default function Layout({ children }: { children: ReactNode }) {

@@ -1,4 +1,6 @@
-import ReactQueryProvider from "./componnents/ReactQueryProvider/ReactQueryProvider";
+
+import { Provider } from "react-redux";
+import ClientProvider from "./componnents/ClientProvider/ClientProvider";
 import "./globals.css";
 import { ReactNode } from "react";
 
@@ -10,7 +12,9 @@ export default function RootLayout({ children }: { children: ReactNode }) {
   return (
     <html lang="en">
       <body>
-        <ReactQueryProvider>{children}</ReactQueryProvider>
+        <ClientProvider>
+          {children}
+          </ClientProvider>
       </body>
     </html>
   );

@@ -6,6 +6,7 @@
   --green-99BC85: #99BC85;
   --begie-FAF1E6: #FAF1E6;
   --begie-FDFAF6: #FDFAF6;
+  --green-6F826A:#6F826A;
 
   
 
@@ -52,4 +53,8 @@ body{
   background: var(--green-99BC85);
   color: white;
    border-radius: 5px;
+   cursor: pointer;
+}
+.button:hover{
+background-color: #6F826A;
 }

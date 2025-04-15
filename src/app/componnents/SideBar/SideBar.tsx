@@ -6,7 +6,7 @@ import React, { act, useState } from "react";
 type MenuProps = {
   onSelect: (value: string) => void;
 };
-export default function Menu({ onSelect }: MenuProps) {
+export default function SideBar({ onSelect }: MenuProps) {
   const [activeTab, setActiveTab] = useState({
     main_food: false,
     salad: false,
