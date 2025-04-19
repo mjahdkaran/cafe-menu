@@ -2,8 +2,6 @@
 
 import React, { useState } from "react";
 import "./menu.css";
-import Image from "next/image";
-
 import { fetchMenu } from "@/app/api/sevises/axios";
 import { IMenu, IMenuItem } from "@/app/types/types";
 import { useQuery } from "@tanstack/react-query";
@@ -13,23 +11,25 @@ import SearchInput from "../componnents/SearchInput/SearchInput";
 
 export default function page() {
   const [activeTab, setActiveTab] = useState("coffee");
- 
+
   const { data, isLoading, isError } = useQuery<IMenuItem[]>({
     queryKey: ["menu", activeTab],
     queryFn: () => fetchMenu(activeTab),
   });
-  console.log('data',data)
+  console.log("data", data);
+
+ if(isLoading){
+  return (<div>
+    درحال لود
+  </div>)
+ }
   return (
     <div>
       <SideBar onSelect={setActiveTab} />
-      <SearchInput/>
+      <SearchInput />
 
       <div className="grid md:grid-cols-4 grid-cols-1 gap-4 md:p-4 0 px-6 py-4    ">
-
-        {data&& data.map((item )=><ItemCard item={item}/>
-        )
-           }
-     
+        {data && data.map((item) => <ItemCard item={item} />)}
       </div>
     </div>
   );

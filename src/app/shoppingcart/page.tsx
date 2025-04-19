@@ -14,7 +14,7 @@ import { formatPrice } from "../functions/functions";
 export default function page() {
   const router = useRouter();
   const clickHandler = () => {
-    router.push("/home");
+    router.push("/menu");
   };
 
   const cartItems = useSelector((state: RootState) => state.cart.items);

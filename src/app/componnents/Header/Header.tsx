@@ -14,7 +14,7 @@ const clickHandler=()=>{
     <header className={ `${style.header} flex justify-between items-center w-full md:h-28 px-5 fixed`}>
       <div>
         {" "}
-        <div className=" pt-3 pl-5">
+        <div onClick={()=>router.push('/')} className=" cursor-pointer pt-3 pl-5">
           <div className="flex items-center text-3xl ">
             <span className="m-1">Real</span>
             <Coffee width={50} height={50} />
