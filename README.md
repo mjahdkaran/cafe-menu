@@ -1,8 +1,10 @@
 # ☕️ Cafe Menu | منوی کافه
 
-A modern and responsive cafe menu web application built with **Next.js**, **Redux Toolkit**, **React Query**, **Axios**, and **Tailwind CSS**.
+A modern and responsive cafe menu web application built with Next.js, TypeScript, Redux Toolkit, React Query, Axios, and Tailwind CSS.
 
-یک وب‌اپلیکیشن مدرن و واکنش‌گرا برای نمایش منوی کافه، ساخته‌شده با **Next.js**، **Redux Toolkit**، **React Query**، **Axios** و **Tailwind CSS**.
+
+یک وب‌اپلیکیشن مدرن و واکنش‌گرا برای نمایش منوی کافه، ساخته‌شده با Next.js، TypeScript، Redux Toolkit، React Query، Axios و Tailwind CSS.
+
 
 ---
 
@@ -32,6 +34,7 @@ A modern and responsive cafe menu web application built with **Next.js**, **Redu
 
 ## 🛠 Tech Stack | تکنولوژی‌های استفاده شده
 
+- **Language:** TypeScript
 - **Framework:** Next.js
 - **State Management:** Redux Toolkit
 - **Data Fetching:** React Query, Axios
