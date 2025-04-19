@@ -1,36 +1,96 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# ☕️ Cafe Menu | منوی کافه
 
-## Getting Started
+A modern and responsive cafe menu web application built with **Next.js**, **Redux Toolkit**, **React Query**, **Axios**, and **Tailwind CSS**.
 
-First, run the development server:
+یک وب‌اپلیکیشن مدرن و واکنش‌گرا برای نمایش منوی کافه، ساخته‌شده با **Next.js**، **Redux Toolkit**، **React Query**، **Axios** و **Tailwind CSS**.
+
+---
+
+## 🚀 Features | ویژگی‌ها
+
+### 🇬🇧 English
+
+- 📋 Category-based menu: Coffee, warm drink, cold drink, Main Dishes, etc.
+- ➕ Add/remove items to the order using Redux Toolkit
+- 💰 View your order with total price
+- 🔄 Fully responsive UI with Tailwind CSS
+- ⚡️ Optimized API using Next.js API routes
+- 🔗 Uses Axios for API communication
+- 📦 Uses React Query for fetching and caching menu data
+
+### 🇮🇷 فارسی
+
+- 📋 منوی دسته‌بندی‌شده: قهوه، ،نوشیدنی گرم ،نوشیدنی سرد، دسر و سالاد ، غذای اصلی ...
+- ➕ اضافه/کم کردن آیتم‌ها به لیست سفارش با استفاده از Redux Toolkit
+- 💰 نمایش سفارشات به‌همراه مجموع قیمت
+- 📱 طراحی کاملاً ریسپانسیو با Tailwind CSS
+- ⚡️ استفاده از API داخلی Next.js برای آیتم‌ها
+- 🔗 استفاده از Axios برای ارتباط با API
+- 📦 مدیریت دریافت و کش داده‌ها با React Query
+
+---
+
+## 🛠 Tech Stack | تکنولوژی‌های استفاده شده
+
+- **Framework:** Next.js
+- **State Management:** Redux Toolkit
+- **Data Fetching:** React Query, Axios
+- **Styling:** Tailwind CSS
+- **Backend:** Next.js API Routes
+
+---
+
+## 🔮 Future Plans | برنامه‌های آینده
+
+### 🇬🇧 English
+
+Here are some of the upcoming features and improvements planned for the **Cafe Menu** project:
+
+- 🔍 **Search Functionality**  
+  Add a live search bar to help users find items by name or category instantly.
+
+- 🛠 **Admin Panel (Dashboard)**  
+  A secured admin dashboard where you can:
+  - ➕ Add new menu items  
+  - 📝 Edit existing items  
+  - ❌ Delete items  
+  - 📁 Manage categories  
+  - 🌙 **Dark Mode**  
+      Add a toggle for switching between light and dark themes using Tailwind theming.
+
+
+
+### 🇮🇷 فارسی
+
+در ادامه لیستی از قابلیت‌ها و بهبودهایی که در آینده برای پروژه **منوی کافه** در نظر گرفته شده:
+
+- 🔍 **قابلیت جستجو**  
+  اضافه کردن نوار جستجوی زنده برای پیدا کردن سریع آیتم‌ها بر اساس نام یا دسته‌بندی.
+
+- 🛠 **پنل ادمین (داشبورد مدیریت)**  
+  ساخت یک داشبورد امن برای مدیریت محتوا که شامل:
+  - ➕ افزودن آیتم جدید  
+  - 📝 ویرایش آیتم‌های موجود  
+  - ❌ حذف آیتم‌ها  
+  - 📁 مدیریت دسته‌بندی‌ها  
+- 🌙 **حالت تاریک (Dark Mode)**  
+  اضافه کردن امکان تغییر تم بین حالت روشن و تاریک با استفاده از قابلیت‌های Tailwind.
+
+  
+---
+
+## 📦 Installation | نصب و اجرا
 
 ```bash
+# Clone the repo
+git clone https://github.com/mjahdkaran/cafe-menu
+
+# Install dependencies
+cd cafe-menu
+npm install
+
+# Run the development server
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
